@@ -1,0 +1,165 @@
+html {
+  font-size: 20px;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.columns {
+  margin-bottom: 120px;
+}
+
+.column {
+  font-size: 1rem;
+}
+.column__inner {
+  background: #e5dfdf;
+  border: 3px solid #716e6e;
+  border-radius: 13px;
+  height: 100%;
+  padding: 15px;
+  padding-bottom: 70px;
+  position: relative;
+}
+.column__number {
+  text-align: center;
+  font-size: 3rem;
+  color: #201f1f;
+}
+.column__list {
+  font-size: 1rem;
+  color: #2d2b2b;
+  padding-left: 0;
+}
+.column__list li {
+  list-style: none;
+  color: #2d2b2b;
+  padding-left: 1rem;
+}
+.column__list li:before {
+  content: "-";
+  padding-right: 5px;
+}
+.column__button {
+  font-size: 1rem;
+  color: #e5dfdf;
+  text-decoration: none;
+  background: #201f1f;
+  border: 3px solid #201f1f;
+  border-radius: 11.5px;
+  width: 80%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+}
+.column__button:hover {
+  background: #fff;
+  color: #201f1f;
+}
+.column__button:active {
+  transition: background 0.2s;
+  background: #b8b8b8;
+}
+
+.carousel-container {
+  overflow: hidden;
+  transition: all 1s;
+  height: 500px;
+  position: relative;
+  padding-top: -100px;
+  margin-bottom: 80px;
+}
+
+.carousel-removed {
+  padding-top: 100px;
+  height: 0;
+}
+
+.carousel {
+  max-width: 1100px;
+  padding: 0 130px;
+  margin: 0 auto;
+}
+.carousel-inner {
+  border: 7px solid #000;
+}
+.carousel__arrow {
+  width: 70px;
+  height: 70px;
+}
+.carousel__arrow--backwards {
+  transform: rotate(180deg);
+}
+.carousel__custom-control {
+  background: transparent;
+  position: absolute;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.carousel__custom-control--next {
+  right: 0px;
+}
+.carousel__custom-control--prev {
+  left: 0px;
+}
+.carousel__custom-control:hover {
+  opacity: 1;
+}
+
+.carousel-item {
+  height: 500px;
+  max-height: 50vw;
+}
+
+.carousel-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-button {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2px;
+  border: none;
+  background: #3f6024;
+  color: #e5dfdf;
+  border-radius: 8px;
+  transition: all 0.4s;
+}
+.carousel-button--remove {
+  box-shadow: 6px 8px 10px 2px #283e15;
+  right: 18px;
+}
+.carousel-button--remove:active {
+  right: 10px;
+}
+.carousel-button--show {
+  box-shadow: -6px 8px 10px 2px #283e15;
+  left: 18px;
+}
+.carousel-button--show:active {
+  left: 10px;
+}
+.carousel-button:active {
+  top: 8px;
+  box-shadow: 0px 0px 0px 0px #283e15;
+}
+
+.text {
+  color: #2d2b2b;
+  font-size: 1rem;
+  margin-bottom: 100px;
+}
